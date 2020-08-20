@@ -1,0 +1,297 @@
+body {
+    background-color: #f8f8f8;
+    font-family: Raleway, Serif;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/*
+ * site-header
+ */
+
+.jumbotron.site-header {
+    background-color: #439ec9;
+    background-image: url("images/banner.jpg");
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.jumbotron.site-header h1 {
+    color: floralwhite;
+    font-size: 5em;
+}
+
+.jumbotron.site-header h2 {
+    font-size: 1.8em;
+}
+
+@media screen and (max-width: 991px) {
+    .jumbotron.site-header h1 {
+        font-size: 3em;
+    }
+
+    .jumbotron.site-header h2 {
+        font-size: 1.5em;
+    }
+}
+
+/*
+ * navigation
+ */
+
+.navbar {
+    min-height: 0;
+    margin: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.navbar-collapse {
+    text-align: center;
+    background-color: #2a2730;
+}
+
+.navbar-header {
+    background-color: #2a2730;
+}
+
+.navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar-nav > li > a {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:visited,
+.navbar-default .navbar-nav > li > a:active {
+    color: #f8f8f8;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #2a2730;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #2a2730;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-collapse {
+        padding: 0;
+    }
+
+    .navbar-default .navbar-nav {
+        margin: 0;
+        width: 100%;
+    }
+
+    .navbar-default .navbar-nav > li {
+        border-bottom: 1px darkgrey solid;
+    }
+
+    .navbar-default .navbar-nav > li:last-child {
+        border-bottom: none;
+    }
+
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:visited,
+    .navbar-default .navbar-nav > li > a:active {
+        font-size: 1.1em;
+    }
+}
+
+/*
+ * body
+ */
+
+.container.main {
+    padding: 30px;
+    background-color: #fff;
+}
+
+.container .jumbotron {
+    background-color: #C7B097;
+    min-height: 300px;
+}
+
+
+@media screen and (max-width: 991px) {
+    .container .jumbotron {
+        min-height: 0;
+    }
+}
+
+.container .jumbotron h1 {
+    font-size: 2.5em;
+    color: #eaffea;
+    padding-bottom: 10px;
+    border-bottom: #eaffea dashed 0.01em;
+}
+
+.container .jumbotron .content p {
+    color: #2a2730;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 991px) {
+    .container .jumbotron h1 {
+        font-size: 2em;
+    }
+
+    .container .jumbotron .content p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .jumbotron {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+/*
+ * body content
+ */
+
+.body-content {
+    padding: 20px 0;
+}
+
+.body-content .header {
+    border-bottom: 1px #bd2c00 solid;
+    margin-bottom: 20px;
+    font-variant: small-caps;
+    color: #439ec9;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.body-content .header span {
+    font-size: 2em;
+}
+
+.body-content .sub-header {
+    margin-top: 10px;
+}
+
+.body-content .sub-header span {
+    color: darkred;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.body-content ul li {
+    font-size: 1.3em;
+}
+
+.iframe-container {
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .iframe-container iframe {
+        width: 100%;
+    }
+}
+
+/*
+ * footer
+ */
+
+.footer {
+    background-color: #fff;
+}
+
+.footer .footer-bar {
+    padding: 10px;
+    background-color: #2a2730;
+    text-align: center;
+    color: #eaffea;
+}
+
+.footer .logo-bar {
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.logo {
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: justify;
+}
+
+
+.logo-image {
+    vertical-align: middle;
+    max-width: 200px; 
+    max-height: 100px;
+}
+
+#logo-container {
+	text-align: justify;
+}
+#logo-container > div {
+	width: 200px; /* Declare your value. Can be in relative units. */
+	display: inline-block;
+	vertical-align: middle;
+
+	/* IE fix. */
+	*display: inline;
+	zoom: 1;
+}
+#logo-container:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+
+.rcorners1 {
+    border-radius: 5px;
+    background: #dcc2bc;
+    /*border: 2px solid #A97F77;*/
+    padding: 10px; 
+}
+
+.rcorners2 {
+    border-radius: 5px;
+    background: #f4eae8;
+    /*border: 2px solid #A97F77;*/
+    padding: 10px; 
+}
+
+.rcorners3 {
+    border-radius: 5px;
+    border: 2px solid #000000;
+    padding: 5px; 
+}
+
